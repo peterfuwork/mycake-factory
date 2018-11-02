@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Cards from './Cards';
-import { observable } from "mobx";
-import { observer } from "mobx-react";
 
 class App extends Component {
   constructor() {
