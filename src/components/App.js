@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import image from '../assets/logo.svg';
+import Header from './Header';
+import Cards from './Cards';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        Hello World!<br/>
-        <img className="App-logo" src={image} />
+        <div className="container">
+        <Header />
+        <Cards />
+        </div>
       </div>
     );
   }
