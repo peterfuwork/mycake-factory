@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = (props) => {
     return(
-        <div>I'm header</div>
+        <div className="row">I'm header</div>
     );
 }
 
