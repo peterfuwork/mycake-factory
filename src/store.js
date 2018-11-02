@@ -25,4 +25,5 @@ decorate(Store, {
 });
 
 
+
 export default new Store();
