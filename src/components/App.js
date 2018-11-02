@@ -7,8 +7,11 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
-        <Header />
-        <Cards />
+          <Header />
+          <div>
+            <h1>{this.props.store.header}</h1>
+          </div>
+          <Cards />
         </div>
       </div>
     );
