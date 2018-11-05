@@ -1,8 +1,12 @@
 import React from 'react';
+import cake from '../assets/cake_logo.png';
 
 const Header = (props) => {
     return(
-        <div className="row">I'm header</div>
+        <header className="row header">
+            <img src={cake} className="img" alt="img" /><br />
+            <div className="title">my Cake Factory</div>
+        </header>
     );
 }
 

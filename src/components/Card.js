@@ -12,7 +12,7 @@ const Card = (props) => {
                 <div className="text">{props.description}</div>
                 <div className="comments">
                     <div className="like">Like<span className="number">&nbsp;1</span></div>
-                    <a href="#" className="btn">Check out</a>
+                    <div className="btn-wrapper"><a href="#" className="btn">Check out</a></div>
                 </div>
             </div>
         </div>
