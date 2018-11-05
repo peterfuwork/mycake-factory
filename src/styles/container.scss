@@ -1,4 +1,5 @@
 .container {
+    @import 'header';
     .Cards {
         .Card {
             position:relative;
@@ -10,6 +11,7 @@
             }
             .info {
                 border:1px solid #000;
+                position:relative;
                 .title{
                     margin: 1rem .8rem;
                     font-size:1.7rem;
@@ -18,14 +20,16 @@
                 .text {
                     font-size: .9rem;
                     line-height: 1.8;
-                    padding: 1rem 1rem 0rem 1rem;
+                    padding: 1rem;
                     font-family: 'Open Sans', sans-serif;
-                    margin:1rem 0;
+                    margin: 1rem 0 8rem;
                 }
                 .comments {
-                    max-width: 200px;
+                    position: absolute;
                     text-align: center;
-                    margin: 1rem auto;
+                    bottom: 0;
+                    width: 100%;
+                    border-top: 1px solid #000;
                     .like {
                         font-size:1.2rem;
                         color:#ccc;
@@ -40,11 +44,18 @@
                         }
                         
                     }
-                    .btn {
-                        padding: 1rem;
-                        text-decoration: none;
-                        color: #000;
-                        border: 1px solid #000;
+                    .btn-wrapper {
+                        margin:1rem;
+                        .btn {
+                            padding: 1rem;
+                            text-decoration: none;
+                            color: #000;
+                            border: 1px solid #000;
+                            &:hover {
+                                color: #fff;
+                                background-color:#000;
+                            }
+                        }
                     }
                 }
             }
